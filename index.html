@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yoga Satya Wilopa - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <h1 class="logo">Yoga Satya Wilopa</h1>
+        <nav>
+          <ul class="nav">
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#skills">Keahlian</a></li>
+            <li><a href="#projects">Proyek</a></li>
+            <li><a href="#certificates">Sertifikat</a></li>
+            <li><a href="#contact">Kontak</a></li>
+            <li><button class="theme-toggle" id="theme-toggle">🌙</button></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Yoga Satya Wilopa</h1>
+        <p class="hero-subtitle">Mahasiswa Informatika | Mobile & Web Developer</p>
+        <p class="hero-description">Passionate about creating innovative digital solutions and exploring the latest technologies in mobile and web development.</p>
+        <a href="#projects" class="cta-button">
+          Lihat Proyek Saya
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">Tentang Saya</h2>
+      <div class="about-content">
+        <div class="profile-image">
+          <img src="images/Profesional Foto.jpg" alt="Foto Yoga Satya Wilopa" class="profile-img" />
+        </div>
+        <div>
+          <p class="about-text">
+            Saya adalah seorang mahasiswa Informatika yang memiliki passion besar dalam pengembangan aplikasi mobile dan web. Dengan semangat untuk terus belajar dan berkembang, saya senang mengeksplorasi teknologi terbaru dan menciptakan solusi digital yang inovatif dan bermanfaat.
+          </p>
+          <p class="about-text">
+            Pengalaman saya mencakup pengembangan aplikasi menggunakan Flutter, JavaScript, dan berbagai framework modern. Saya percaya bahwa teknologi dapat membuat hidup lebih mudah dan saya berkomitmen untuk terus meningkatkan keterampilan saya di bidang ini.
+          </p>
+          <a href="CV_Yoosa.pdf" class="download-btn" download>📄 Download CV</a>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <h2 class="section-title">Keahlian</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+            <div class="skill-icon">📱</div>
+            <h3 class="skill-name">Flutter</h3>
+            <p class="skill-level">Mobile Development</p>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon">⚡</div>
+            <h3 class="skill-name">JavaScript</h3>
+            <p class="skill-level">Web Development</p>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon">🎨</div>
+            <h3 class="skill-name">HTML & CSS</h3>
+            <p class="skill-level">Frontend Development</p>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon">🔧</div>
+            <h3 class="skill-name">Git & GitHub</h3>
+            <p class="skill-level">Version Control</p>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon">⚡</div>
+            <h3 class="skill-name">PHP Laravel</h3>
+            <p class="skill-level">Backend Web Framework</p>
+        </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Proyek</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">📱</div>
+          <div class="project-content">
+            <h3 class="project-title">Susu Mbok Darmi</h3>
+            <p class="project-description">Aplikasi pemesanan susu lokal yang memudahkan pelanggan untuk memesan produk susu segar dengan fitur lengkap.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Dart</span>
+              <span class="tech-tag">Firebase</span>
+            </div>
+            <div class="project-buttons">
+              <button class="project-button" onclick="showPopup('Susu Mbok Darmi', 'Aplikasi pemesanan susu lokal dengan fitur pemesanan real-time, manajemen keranjang belanja, pengaturan alamat pengiriman, dan sistem notifikasi untuk pelanggan. Dibangun menggunakan Flutter dengan integrasi Firebase untuk backend.')">
+                Lihat Detail
+              </button>
+              <a href="https://github.com/kamu/susu-mbok-darmi" target="_blank" class="project-button">🔗 Lihat Kode</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">⚙️</div>
+          <div class="project-content">
+            <h3 class="project-title">Web Penjualan Spare Part</h3>
+            <p class="project-description">Sistem digitalisasi penjualan spare part kendaraan untuk Lestari Motor Bogor menggunakan PHP Laravel dan Bootstrap.</p>
+            <div class="project-tech">
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Bootstrap</span>
+            </div>
+            <div class="project-buttons">
+              <button class="project-button" onclick="showPopup('Web Penjualan Spare Part', 'Sistem digitalisasi penjualan spare part kendaraan untuk Lestari Motor Kabupaten Bogor yang mencakup fitur katalog produk, keranjang belanja, pembayaran digital (QRIS, Dana, Kartu Kredit), manajemen stok, serta dashboard admin. Dibangun menggunakan framework PHP Laravel dan Bootstrap.')">
+                Lihat Detail
+              </button>
+              <a href="https://github.com/kamu/web-sparepart" target="_blank" class="project-button">🔗 Lihat Kode</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificates" class="section certificates-section">
+  <div class="container">
+    <h2 class="section-title">Sertifikat</h2>
+    <div class="certificate-filter">
+  <label for="category">Filter Kategori:</label>
+  <select id="category-filter" onchange="filterCertificates()">
+    <option value="all">Semua</option>
+    <option value="kompetensi">Kompetensi</option>
+    <option value="seminar">Seminar</option>
+    <option value="pelatihan">Pelatihan</option>
+    <option value="prestasi">Prestasi</option>
+  </select>
+</div>
+    <div class="certificates-grid">
+      <!-- Sertifikat 1 -->
+  <div class="certificate-card" data-category="kompetensi">
+    <img src="images/Uji Kompetensi Berbasis Industri Bidang Sistem Basis Data_page-0001.jpg" alt="Sertifikat Sistem Basis Data - Iner Corp" class="certificate-img">
+    <div class="certificate-info">
+      <div class="certificate-provider">Iner Corp</div>
+      <h3 class="certificate-title">Uji Kompetensi Sistem Basis Data</h3>
+      <p class="certificate-date">19–20 Juli 2024</p>
+    </div>
+  </div>
+
+  <!-- Sertifikat 2 -->
+  <div class="certificate-card" data-category="prestasi">
+    <img src="images/clmsCertificate_page-0001.jpg" alt="Sertifikat Database Programming with SQL - Oracle Academy" class="certificate-img">
+    <div class="certificate-info">
+      <div class="certificate-provider">Oracle Academy</div>
+      <h3 class="certificate-title">Database Programming with SQL</h3>
+      <p class="certificate-date">24 Mei 2024</p>
+    </div>
+  </div>
+
+  <!-- Sertifikat 3 -->
+  <div class="certificate-card" data-category="seminar">
+    <img src="images/Seminar Motivasi_page-0001.jpg" alt="Sertifikat Seminar Motivasi PKKMB BSI" class="certificate-img">
+    <div class="certificate-info">
+      <div class="certificate-provider">Universitas BSI</div>
+      <h3 class="certificate-title">PKKMB & Seminar Motivasi</h3>
+      <p class="certificate-date">17 September 2023</p>
+    </div>
+  </div>
+
+  <!-- Sertifikat 4 -->
+  <div class="certificate-card" data-category="seminar">
+    <img src="images/Seminar Wajib Entrepreneur_page-0001.jpg" alt="Sertifikat Seminar Wajib Entrepreneur" class="certificate-img">
+    <div class="certificate-info">
+      <div class="certificate-provider">BSI Entrepreneur Center</div>
+      <h3 class="certificate-title">Seminar Wajib Entrepreneur</h3>
+      <p class="certificate-date">14 November 2023</p>
+    </div>
+  </div>
+
+  <!-- Sertifikat 5 -->
+  <div class="certificate-card" data-category="prestasi">
+    <img src="images/Sertifikat GBS Batch 7_Yoga Satya Wilopa_page-0001.jpg" alt="Sertifikat Generasi Bebas Stunting - Indorelawan" class="certificate-img">
+    <div class="certificate-info">
+      <div class="certificate-provider">Indorelawan & ParagonCorp</div>
+      <h3 class="certificate-title">Generasi Bebas Stunting - Relawan</h3>
+      <p class="certificate-date">22 Juni – 15 Agustus 2024</p>
+    </div>
+  </div>
+
+  <!-- Sertifikat 6 -->
+  <div class="certificate-card" data-category="pelatihan">
+    <img src="images/Sertifikat_YOGA SATYA WILOPA_Database Design & Database Programming with SQL_page-0001.jpg" alt="Sertifikat Database Design - Kominfo Digitalent" class="certificate-img">
+    <div class="certificate-info">
+      <div class="certificate-provider">Kominfo & Oracle Academy</div>
+      <h3 class="certificate-title">Database Design & SQL - Digital Talent</h3>
+      <p class="certificate-date">19 Feb – 14 Juli 2024</p>
+    </div>
+  </div>
+    <!-- Sertifikat 7 -->
+  <div class="certificate-card" data-category="seminar">
+    <img src="images/ORMIK_page-0001.jpg" alt="Sertifikat ORMIK BSI" class="certificate-img">
+    <div class="certificate-info">
+      <div class="certificate-provider">Universitas Bina Sarana Informatika</div>
+      <h3 class="certificate-title">PPKMB & ORMIK</h3>
+      <p class="certificate-date">12–16 September 2023</p>
+    </div>
+  </div>
+
+  <!-- Sertifikat 8 -->
+  <div class="certificate-card" data-category="prestasi">
+    <img src="images/Physics Expo 2020.png" alt="Sertifikat Finalis Physics Expo 2020" class="certificate-img">
+    <div class="certificate-info">
+      <div class="certificate-provider">Physics Expo 2020</div>
+      <h3 class="certificate-title">Finalis Tech Innovation Challenge</h3>
+      <p class="certificate-date">16 Sep – 4 Okt 2020</p>
+    </div>
+  </div>
+
+  <!-- Sertifikat 9 -->
+  <div class="certificate-card" data-category="pelatihan">
+    <img src="images/SERTIFIKAT PELATIHAN BAHASA INGGRIS_page-0001.jpg" alt="Sertifikat Pelatihan Bahasa Inggris Karier.mu" class="certificate-img">
+    <div class="certificate-info">
+      <div class="certificate-provider">Karier.mu</div>
+      <h3 class="certificate-title">Kompetensi Bahasa Inggris</h3>
+      <p class="certificate-date">21 Oktober 2021</p>
+    </div>
+  </div>
+
+  <!-- Sertifikat 10 -->
+  <div class="certificate-card" data-category="kompetensi">
+    <img src="images/Sertifikat TOEFL_Yoga Satya Wilopa.jpg" alt="Sertifikat TOEFL Daily Bahasa Inggris" class="certificate-img">
+    <div class="certificate-info">
+      <div class="certificate-provider">Daily Bahasa Inggris</div>
+      <h3 class="certificate-title">TOEFL Prediction Test</h3>
+      <p class="certificate-date">10 April 2022</p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Zoom -->
+<div id="imgModal" class="modal" onclick="closeModal()">
+  <span class="modal-close">&times;</span>
+  <img class="modal-content" id="modal-img">
+</div>
+</section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-content">
+        <h2 class="section-title">Mari Berkolaborasi</h2>
+        <p class="about-text">Tertarik berdiskusi proyek atau kolaborasi? Kirim pesan langsung dari form ini atau hubungi saya via email/WA.</p>
+
+        <form action="https://formspree.io/f/mjkrqpqp" method="POST" class="contact-form">
+          <input type="text" name="name" placeholder="Nama Anda" required>
+          <input type="email" name="email" placeholder="Email Anda" required>
+          <textarea name="message" rows="5" placeholder="Pesan Anda" required></textarea>
+          <button type="submit">Kirim Pesan</button>
+        </form>
+
+        <div class="contact-info">
+          <a href="mailto:yogasatya@email.com" class="contact-item">📧 yosawilopa@gmail.com</a>
+          <a href="https://instagram.com/yogasatya" class="contact-item">📱 082211248791</a>
+        </div>
+        
+        <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.3194774814824!2d106.8205522!3d-6.730820899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69cb007ef6faf1%3A0x64810e8264685bf!2sgg%20ojek%20cisempur%20cinagara!5e0!3m2!1sid!2sid!4v1752034735017!5m2!1sid!2sid"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Yoga Satya Wilopa. Dibuat dengan ❤️ dan kode.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop">↑</button>
+
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <button class="popup-close" onclick="closePopup()">×</button>
+      <h3 class="popup-title" id="popup-title"></h3>
+      <p class="popup-description" id="popup-description"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
