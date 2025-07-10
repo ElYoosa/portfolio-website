@@ -246,6 +246,14 @@ class ProjectModalManager {
         tech: ["PHP", "Laravel", "MySQL", "Bootstrap"],
         github: "https://github.com/kamu/web-sparepart",
       },
+      "web-tokoonline": {
+        icon: "🛒",
+        title: "Web Toko Online",
+        description:
+          "Aplikasi toko online berbasis web yang mendukung manajemen produk, kategori, keranjang belanja, dan transaksi. Sistem ini dibangun secara native untuk pemahaman fundamental pengembangan web dengan PHP dan MySQL.",
+        tech: ["PHP", "MySQL", "HTML", "CSS"],
+        github: "https://github.com/ElYoosa/Web-Toko-Online",
+      },
       "perfect-plate": {
         icon: "🍽️",
         title: "Perfect Plate - UI/UX Design",
