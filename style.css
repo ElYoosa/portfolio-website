@@ -165,7 +165,6 @@ body.dark-mode {
 }
 
 .mobile-menu-toggle {
-  display: none;
   background: none;
   border: none;
   font-size: 1.5rem;
@@ -2195,4 +2194,34 @@ body.dark-mode {
   background: transparent;
   color: var(--primary);
   transform: none;
+}
+
+/* Desain Modern untuk Tombol Aksi di Header Mobile */
+.header-mobile-actions .theme-toggle,
+.header-mobile-actions .mobile-menu-toggle {
+  border: 2px solid var(--border-light);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.dark-mode .header-mobile-actions .theme-toggle,
+.dark-mode .header-mobile-actions .mobile-menu-toggle {
+  border-color: var(--border-dark);
+}
+
+/* Efek Hover */
+.header-mobile-actions .theme-toggle:hover,
+.header-mobile-actions .mobile-menu-toggle:hover {
+  background: var(--surface-light);
+  transform: scale(1.1) rotate(15deg);
+}
+
+.dark-mode .header-mobile-actions .theme-toggle:hover,
+.dark-mode .header-mobile-actions .mobile-menu-toggle:hover {
+  background: var(--surface-dark);
 }
