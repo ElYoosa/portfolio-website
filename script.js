@@ -1,36 +1,42 @@
 // Theme Management
 class ThemeManager {
   constructor() {
-    this.themeToggle = document.getElementById("theme-toggle")
-    this.body = document.body
-    this.init()
+    // Memilih kedua tombol
+    this.themeToggles = document.querySelectorAll(".theme-toggle");
+    this.body = document.body;
+    this.init();
   }
 
   init() {
-    // Load saved theme
-    const savedTheme = localStorage.getItem("theme")
+    // Memuat tema yang tersimpan
+    const savedTheme = localStorage.getItem("theme");
     if (savedTheme) {
-      this.body.classList.toggle("dark-mode", savedTheme === "dark")
-      this.updateThemeIcon()
+      this.body.classList.toggle("dark-mode", savedTheme === "dark");
     }
+    this.updateThemeIcon(); // Selalu update ikon saat halaman dimuat
 
-    // Theme toggle event
-    this.themeToggle.addEventListener("click", () => {
-      this.toggleTheme()
-    })
+    // Menambahkan event listener ke setiap tombol
+    this.themeToggles.forEach(toggle => {
+      toggle.addEventListener("click", () => {
+        this.toggleTheme();
+      });
+    });
   }
 
   toggleTheme() {
-    this.body.classList.toggle("dark-mode")
-    const isDark = this.body.classList.contains("dark-mode")
-    localStorage.setItem("theme", isDark ? "dark" : "light")
-    this.updateThemeIcon()
+    this.body.classList.toggle("dark-mode");
+    const isDark = this.body.classList.contains("dark-mode");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+    this.updateThemeIcon();
   }
 
   updateThemeIcon() {
-    const isDark = this.body.classList.contains("dark-mode")
-    const icon = this.themeToggle.querySelector("i")
-    icon.className = isDark ? "fas fa-sun" : "fas fa-moon"
+    const isDark = this.body.classList.contains("dark-mode");
+    // Mengupdate ikon di setiap tombol
+    this.themeToggles.forEach(toggle => {
+      const icon = toggle.querySelector("i");
+      icon.className = isDark ? "fas fa-sun" : "fas fa-moon";
+    });
   }
 }
 

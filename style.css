@@ -467,7 +467,7 @@ body.dark-mode {
 .education-item {
   display: flex;
   gap: 1.5rem;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .education-icon {
@@ -578,7 +578,7 @@ body.dark-mode {
   transform: translateY(30px);
   display: flex;
   gap: 1.5rem;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .dark-mode .experience-item {
@@ -2107,6 +2107,7 @@ body.dark-mode {
     flex-direction: column;
     text-align: center;
     gap: 1rem;
+    align-items: center;
   }
 
   .skills-grid {
@@ -2171,4 +2172,30 @@ body.dark-mode {
   height: auto; /* Biarkan tinggi menyesuaikan agar proporsional */
   border-radius: 8px; /* Beri sedikit lengkungan pada sudut bendera */
   box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Tambahkan sedikit bayangan */
+}
+
+/* Style untuk Tombol Tema di Menu Mobile */
+.mobile-theme-toggle-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.dark-mode .mobile-theme-toggle-container {
+  color: var(--text-dark);
+}
+
+.mobile-theme-toggle-container button {
+  font-size: 1.2rem; /* Samakan ukuran ikon */
+  color: inherit; /* Warisi warna dari parent */
+  border: none;
+}
+
+.mobile-theme-toggle-container button:hover {
+  background: transparent;
+  color: var(--primary);
+  transform: none;
 }
