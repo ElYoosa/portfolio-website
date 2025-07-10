@@ -904,7 +904,7 @@ body.dark-mode {
 }
 
 .skill-name {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
   margin-bottom: 1.2rem;
   color: var(--text-light);
@@ -1612,6 +1612,7 @@ body.dark-mode {
   color: var(--text-light);
   transition: var(--transition);
   border: 2px solid transparent;
+  justify-content: center;
 }
 
 .dark-mode .contact-item {
@@ -2053,6 +2054,15 @@ body.dark-mode {
 
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .project-buttons {
+    flex-direction: column; /* Membuat tombol tersusun vertikal */
+  }
+
+  .project-button {
+    width: 100%; /* Membuat tombol memenuhi lebar */
+    text-align: center; /* Memastikan teks di tengah */
   }
 
   .certificates-grid {
