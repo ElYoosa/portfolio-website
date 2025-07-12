@@ -234,7 +234,7 @@ class ProjectModalManager {
     this.projects = {
       "susu-mbok-darmi": {
         icon: "📱",
-        title: "Susu Mbok Darmi",
+        title: "Susu Mbok Darmi (Mobile App)",
         description: "Aplikasi pemesanan susu lokal dengan fitur pemesanan real-time, manajemen keranjang belanja, pengaturan alamat pengiriman, dan sistem notifikasi untuk pelanggan. Dibangun menggunakan Flutter dengan integrasi Firebase untuk backend.",
         tech: ["Flutter", "Dart", "Firebase"],
         github: "https://github.com/ElYoosa/aplikasi_susu_mbok_darmi",
