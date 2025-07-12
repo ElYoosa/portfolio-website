@@ -239,6 +239,13 @@ class ProjectModalManager {
         tech: ["Flutter", "Dart", "Firebase"],
         github: "https://github.com/ElYoosa/aplikasi_susu_mbok_darmi",
       },
+      "perfect-plate-app": {
+        icon: "📱",
+        title: "Perfect Plate (Mobile App)",
+        description: "Aplikasi mobile bertema resep makanan yang dirancang dengan Flutter dan Dart berdasarkan desain modern dari Figma. Menyediakan fitur pencarian resep, detail langkah memasak, dan penyimpanan resep favorit.",
+        tech: ["Flutter", "Dart", "Figma"],
+        github: "https://github.com/ElYoosa/perfect_plate",
+      },
       "web-sparepart": {
         icon: "⚙️",
         title: "Web Penjualan Spare Part",
